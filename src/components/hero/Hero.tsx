@@ -102,29 +102,6 @@ const Hero: React.FC = () => {
                             Contact Me
                         </a>
                     </div>
-                    <div className="scroll-down">
-                        <a
-                            href="#about"
-                            onClick={(e) => handleNavClick(e, "#about")}
-                            className="scroll-link"
-                        >
-                            <span>Scroll down</span>
-                            <svg
-                                className="scroll-icon"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                    strokeWidth="2"
-                                    d="M19 14l-7 7m0 0l-7-7m7 7V3"
-                                ></path>
-                            </svg>
-                        </a>
-                    </div>
                 </div>
             </div>
         </section>

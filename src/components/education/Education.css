@@ -1,0 +1,106 @@
+.education-section {
+  background: var(--background);
+  padding: 60px 0 90px 0;
+}
+
+.education-header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.magic-text {
+  background: linear-gradient(125deg, #722323 60%, #d15d5d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.skills-desc {
+  font-size: 19px;
+  color: #757575;
+  margin-top: 16px;
+  margin-bottom: 0;
+  max-width: 630px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+}
+
+.education-list {
+  max-width: 750px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.education-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  min-width: 340px;
+  padding: 30px 36px 30px 24px;
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 12px 48px 0 rgba(220, 38, 38, 0.10);
+  border-left: 4px solid var(--primary);
+  transition: box-shadow 0.2s, transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.education-item:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 18px 60px 0 #fcd1d1;
+}
+
+.education-main {
+  flex: 1;
+}
+
+.education-school {
+  font-size: 20px;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 6px;
+  letter-spacing: 0.2px;
+}
+
+.education-desc {
+  font-size: 17px;
+  color: #333;
+  opacity: 0.93;
+  margin-bottom: 2px;
+  line-height: 1.6;
+}
+
+.education-period {
+  font-size: 16px;
+  color: var(--primary);
+  border-radius: 9999px;
+  padding: 6px 19px;
+  font-weight: 600;
+  min-width: 108px;
+  text-align: center;
+  align-self: flex-start;
+  
+  margin-left: 22px;
+  letter-spacing: 1px;
+  transition: background 0.2s;
+  border: 1px solid var(--primary);
+}
+
+@media (max-width: 850px) {
+  .education-list {
+    max-width: 98vw;
+  }
+  .education-item {
+    width: 97vw;
+    padding: 26px 13px 26px 10px;
+  }
+}
