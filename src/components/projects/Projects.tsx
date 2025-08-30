@@ -1,6 +1,6 @@
 import React from "react";
 import { ExternalLink, Github, Star } from "lucide-react";
-import "./projects.css";
+import "./Projects.css";
 import { projectsData, type ProjectData } from "../../data/projects";
 
 interface ProjectCardProps {
