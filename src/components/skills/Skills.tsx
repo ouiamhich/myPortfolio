@@ -10,50 +10,49 @@ type SkillCategory = {
 
 const Skills: React.FC = () => {
   const skillCategories: SkillCategory[] = [
-  {
-    name: "Frontend",
-    icon: <Code className="skills-category-icon" />,
-    skills: [
-      "React.js", "Next.js", "React Native",
-      "TypeScript", "JavaScript",
-      "HTML5", "CSS3",
-      "Material UI", "Tailwind CSS",
-      "Mobile-First Design"
-    ]
-  },
-  {
-    name: "Backend",
-    icon: <Code className="skills-category-icon" />,
-    skills: [
-      "Node.js", "Express.js", "Strapi",
-      "API Integration", "Data Handling",
-      "Authentication",
-      "MySQL", "PostgreSQL", "MongoDB"
-    ]
-  },
-  {
-    name: "SEO",
-    icon: <Code className="skills-category-icon" />,
-    skills: [
-      "SEO Best Practices",
-      "Accessibility",
-      "Google Analytics", "Tag Manager", 
-      "Search Console", "Schema Markup","Structured Data",
-    ]
-  },
-  {
-    name: "Tools & Platforms",
-    icon: <Code className="skills-category-icon" />,
-    skills: [
-      "Git/GitHub",
-      "VS Code",
-      "Jest","React Testing Library",
-      "Docker", "Vite",
-      "Vercel"
-    ]
-  }
-];
-
+    {
+      name: "Frontend",
+      icon: <Code className="skills-category-icon" />,
+      skills: [
+        "React.js", "Next.js", "React Native",
+        "TypeScript", "JavaScript",
+        "HTML5", "CSS3",
+        "Material UI", "Tailwind CSS",
+        "Mobile-First Design"
+      ]
+    },
+    {
+      name: "Backend",
+      icon: <Code className="skills-category-icon" />,
+      skills: [
+        "Node.js", "Express.js", "Strapi",
+        "API Integration", "Data Handling",
+        "Authentication",
+        "MySQL", "PostgreSQL", "MongoDB"
+      ]
+    },
+    {
+      name: "SEO",
+      icon: <Code className="skills-category-icon" />,
+      skills: [
+        "SEO Best Practices",
+        "Accessibility",
+        "Google Analytics", "Tag Manager",
+        "Search Console", "Schema Markup", "Structured Data"
+      ]
+    },
+    {
+      name: "Tools & Platforms",
+      icon: <Code className="skills-category-icon" />,
+      skills: [
+        "Git/GitHub",
+        "VS Code",
+        "Jest", "React Testing Library",
+        "Docker", "Vite",
+        "Vercel"
+      ]
+    }
+  ];
 
   return (
     <section id="skills" className="skills-section">
@@ -73,7 +72,7 @@ const Skills: React.FC = () => {
             <div
               key={idx}
               className="skills-card"
-              style={{ animationDelay: `${idx * 150}ms` }}
+              style={{ animation: "fadeInUp .45s ease forwards", animationDelay: `${idx * 120}ms` }}
             >
               <div className="skills-card-header">
                 <div className="skills-card-icon">{category.icon}</div>

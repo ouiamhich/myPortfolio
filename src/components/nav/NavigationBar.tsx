@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Home, Briefcase, User, Mail, Code, GraduationCap } from "lucide-react";
+import { Menu, X, Home, Briefcase, User, Mail, Code } from "lucide-react";
 import "./NavigationBar.css";
 import { scrollToElement } from "../../utils/scrollUtils";
 
@@ -23,7 +23,6 @@ const NavigationBar: React.FC = () => {
     const navLinks = [
         { name: "Home", icon: Home, href: "#home" },
         { name: "About", icon: User, href: "#about" },
-        { name: "Education", icon: GraduationCap , href: "#education" },
         { name: "Skills", icon: Code, href: "#skills" },
         { name: "Projects", icon: Briefcase, href: "#projects" },
         { name: "Contact", icon: Mail, href: "#contact" },

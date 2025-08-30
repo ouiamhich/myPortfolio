@@ -1,11 +1,3 @@
-:root {
-  --primary: #722323;
-  --accent: #680000;
-  --background: #fff;
-  --foreground: #222;
-  --muted: #f1f5f9;
-}
-
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -47,7 +39,7 @@
 }
 
 .hero-text{
-  background: linear-gradient(125deg, #722323 46% 60%, #d15d5d 85%);  -webkit-background-clip: text;
+  background: linear-gradient(125deg, var(--primary)46% 60%, var(--secondary)85%);  -webkit-background-clip: text;
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

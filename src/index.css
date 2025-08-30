@@ -1,5 +1,5 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -11,9 +11,21 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --primary: #015705;
+  --accent: #737373;
+  --secondary: #0db421;
+  --background: #ffffff;
+  --foreground: #1f1f1f;
+  --muted: #6b7280;
+  --card-border: #e5e7eb;
+  --shadow: rgba(0, 0, 0, 0.08);
+  --background: #fff;
+  --muted-foreground: #6b7280;
+  --glass-bg: rgba(255, 255, 255, 0.6);
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;

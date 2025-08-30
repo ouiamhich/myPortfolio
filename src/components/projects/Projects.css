@@ -1,0 +1,206 @@
+.projects-section {
+  padding: 80px 20px;
+  background: var(--background);
+}
+
+.projects-desc {
+  font-size: 18px;
+  color: var(--muted-foreground);
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.projects-header {
+  text-align: center;
+  margin-bottom: 56px;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.magic-text {
+  background: linear-gradient(to right, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-header p {
+  color: #757575;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+}
+
+@media (max-width: 1024px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.project-card {
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card.featured {
+  grid-column: span 2;
+
+}
+
+@media (max-width: 640px) {
+  .project-card.featured {
+    grid-column: span 1;
+  }
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-image-wrapper {
+  position: relative;
+  background: linear-gradient(to bottom right, #f2f2f2, #eaeaea);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+.card-image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.badge {
+  position: absolute;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.featured-badge {
+  top: 10px;
+  left: 10px;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status-badge {
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.card-content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: var(--foreground)
+}
+
+.description {
+  color: #757575;
+  margin-bottom: 16px;
+}
+
+.features h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: var(--foreground);
+}
+
+.features ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 0 16px 0;
+}
+
+.features li {
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: #757575;
+}
+
+.tags {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.tag {
+
+  border: 1px solid rgba(22, 163, 74, .35);
+  color: #065f46;
+  background: #f0fdf4;
+  border-radius: 9999px;
+  font-size: 13px;
+  padding: 8px 12px;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.actions {
+  margin-top: auto;
+  display: flex;
+  gap: 16px;
+}
+
+.link {
+  font-size: 14px;
+  color: var(--primary);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

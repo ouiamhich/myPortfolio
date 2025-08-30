@@ -1,17 +1,17 @@
-:root {
-  --primary: #722323;
-  --accent: #680000;
-  --ocean: linear-gradient(135deg, #722323 30%, #680000 100%);
+/* :root {
+  --primary: #0f9520;
+  --accent: #737373;
+  --ocean: linear-gradient(135deg, var(--primary)30%, #737373 100%);
   --bg: #fff;
   --muted-foreground: #6b7280;
-}
+} */
 
 .hero-section {
   min-height: 100vh;
   display: flex;
   align-items: center;
   padding-top: 64px;
-  background: var(--bg);
+  background: var(--background);
   position: relative;
   overflow: hidden;
 }
@@ -85,7 +85,7 @@
 .hero-greeting {
   font-size: 20px;
   font-weight: 500;
-  color: var(--primary);
+  color: var(--muted);
   margin-bottom: 4px;
 }
 
@@ -104,7 +104,7 @@
 }
 
 .hero-text{
-  background: linear-gradient(125deg, #722323 46% 60%, #d15d5d 85%);  -webkit-background-clip: text;
+  background: linear-gradient(125deg, var(--primary)46% 60%, var(--secondary)85%);  -webkit-background-clip: text;
 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -161,7 +161,7 @@
 }
 
 .btn-primary:hover {
-  background: #680000;
+  background: #737373;
   transform: scale(1.05);
 }
 

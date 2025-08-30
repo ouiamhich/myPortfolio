@@ -1,8 +1,6 @@
 import React from "react";
 import { User, Star, Award, Calendar } from "lucide-react";
 import "./About.css";
-import LazyImage from "../helpers/LazyImage";
-import { IMAGE_PATHS } from "../../config/images";
 
 const About: React.FC = () => {
   return (
@@ -13,7 +11,6 @@ const About: React.FC = () => {
             <div className="about-title-wrap">
               <h2 className="about-title">
                 About Me
-                <span className="about-title-underline"></span>
               </h2>
             </div>
             
@@ -23,6 +20,14 @@ const About: React.FC = () => {
             
             <p className="about-text">
               Experienced in agile, cross-functional teams, I thrive on collaboration and problem-solving—whether optimizing performance, enhancing user experience, or ensuring maintainable, scalable code. I am always eager to learn new tools and contribute to innovative projects that create real value.
+            </p>
+
+            <p className="about-text">
+              Beyond coding, I care deeply about SEO optimization, accessibility, and performance best practices—ensuring that every project I work on not only looks great but also reaches the right audience and delivers measurable results. I recently earned my Certified Scrum Master (CSM®) credential, further strengthening my ability to foster collaboration, streamline processes, and contribute to a team’s success.
+            </p>
+
+            <p className="about-text">
+              I’m continuously exploring new technologies, design patterns, and emerging trends to stay ahead in the fast-moving front-end ecosystem. My ultimate goal is to keep creating digital products that are both impactful and delightful for users.
             </p>
             
             <div className="about-stats-grid">
@@ -66,21 +71,6 @@ const About: React.FC = () => {
                   <p className="about-stat-value">Open to Work</p>
                 </div>
               </div>
-            </div>
-          </div>
-          
-          <div className="about-col about-col-image">
-            <div className="about-image-wrap">
-              <div className="about-image-main">
-                <LazyImage
-                  src={IMAGE_PATHS.PROFILE.OUIAM}
-                  alt="Harry - Full Stack Developer and Software Engineer"
-                  className="about-img"
-                  loading="eager"
-                  placeholder="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzk5YTNhZiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkhhcnJ5PC90ZXh0Pjwvc3ZnPg=="
-                />
-              </div>
-              <div className="about-image-bg"></div>
             </div>
           </div>
         </div>
