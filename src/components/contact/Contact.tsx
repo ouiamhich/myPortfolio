@@ -169,7 +169,7 @@ const Contact: React.FC = () => {
                 </div>
                 <div>
                   <div className="label">Email</div>
-                  <div>ouiahich@gmail.com</div>
+                  <div>ouiamhich@gmail.com</div>
                 </div>
               </div>
 
