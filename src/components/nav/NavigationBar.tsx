@@ -55,6 +55,13 @@ const NavigationBar: React.FC = () => {
                             <span className="navbar-link-underline"></span>
                         </a>
                     ))}
+                    <a
+                        href="/CV-Ouiam-hichour.pdf"
+                        download
+                        className="navbar-link navbar-download-cv"
+                    >
+                        📄 Download CV
+                    </a>
                 </div>
 
                 <div className="navbar-mobile-toggle">
@@ -80,6 +87,13 @@ const NavigationBar: React.FC = () => {
                             {link.name}
                         </a>
                     ))}
+                    <a
+                        href="/Ouiam-CV.pdf"
+                        download
+                        className="navbar-mobile-link"
+                    >
+                        📄 Download CV
+                    </a>
                 </div>
             )}
         </nav>

@@ -94,7 +94,7 @@ const Skills: React.FC = () => {
           <div className="skills-focus">
             <h3 className="skills-focus-title">Current Focus</h3>
             <div className="skills-focus-list">
-              {["Next.js 14", "React.js", "Tailwind CSS", "TypeScript", "MUI", "API integration"].map((tech) => (
+              {["Next.js 14", "React.js", "Express js", "Node js", "Redux", "API integration"].map((tech) => (
                 <span key={tech} className="skills-focus-badge">
                   {tech}
                 </span>

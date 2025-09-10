@@ -179,3 +179,18 @@
     display: none;
   }
 }
+
+.navbar-download-cv {
+  border: 1px solid var(--primary);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin-left: 12px;
+  background: var(--primary);
+  transition: background 0.3s ease;
+  color: var(--background);
+}
+
+.navbar-download-cv:hover {
+  background: var(--secondary);
+  color: var(--background);
+}

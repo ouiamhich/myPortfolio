@@ -25,11 +25,10 @@ export const projectsData: ProjectData[] = [
     id: "icards",
     title: "iCards",
     detailedDescription: "Contributed to the front-end development of iCards Portal, an NFC-enabled digital business card platform with features like profile customization, contact sharing, and analytics tracking.",
-    tags: ["React", "TS", "Spring boot", "Keycloak", "i18n"],
+    tags: ["React", "Typescript", "Spring boot", "Keycloak", "Postgres", "i18n"],
     imageUrl: getImagePath(IMAGE_PATHS.HEROES.ICARDS),
     projectUrl: "https://portal.icards.link/",
     featured: true,
-    logo: getImagePath(IMAGE_PATHS.LOGOS.ICARDS),
     features: [
       {
         title: "NFC Tap-to-Share : ",
@@ -56,64 +55,102 @@ export const projectsData: ProjectData[] = [
     year: "2024-2025"
   },
   {
-  id: "organitz-mobile",
-  title: "Organitz Mobile App",
-  detailedDescription: "Organitz is a streamlined mobile app tailored for SMEs—built by Swiss businesses for Swiss and international service providers. It offers intuitive tools to manage clients, track time, report expenses, and generate invoices—all from the palm of your hand.",
-  tags: ["React native", "TS", "Expo","PHP"],
-  imageUrl: getImagePath(IMAGE_PATHS.HEROES.ORGANITZ_MOBILE),
-  projectUrl: "https://play.google.com/store/apps/details?id=com.cogify.Organitz&hl=en-US&pli=1",
-  features: [
-    {
-      title: "Customer & Project Tracking",
-      description: "Create and manage customers, projects, and activities with clarity and transparency.",
-      icon: "users"
-    },
-    {
-      title: "Expense Reporting",
-      description: "Easily log expenses with receipt upload and integrated sign-off workflow.",
-      icon: "file-invoice-dollar"
-    },
-    {
-      title: "Invoicing",
-      description: "Generate and track invoices automatically based on time entries and billable expenses.",
-      icon: "file-invoice"
-    },
-    {
-      title: "Time Tracking",
-      description: "Track your working hours intuitively—via entries or stopwatch—for accurate billing.",
-      icon: "clock"
-    }
-  ],
-  status: "completed",
-  year: "2025"
-},
+    id: "organitz-mobile",
+    title: "Organitz Mobile App",
+    detailedDescription: "Organitz is a streamlined mobile app tailored for SMEs—built by Swiss businesses for Swiss and international service providers. It offers intuitive tools to manage clients, track time, report expenses, and generate invoices—all from the palm of your hand.",
+    tags: ["React native", "Typescript", "Expo", "PHP"],
+    imageUrl: getImagePath(IMAGE_PATHS.HEROES.ORGANITZ_MOBILE),
+    projectUrl: "https://play.google.com/store/apps/details?id=com.cogify.Organitz&hl=en-US&pli=1",
+    featured: true,
+    features: [
+      {
+        title: "Customer & Project Tracking : ",
+        description: "Create and manage customers, projects, and activities with clarity and transparency.",
+        icon: "users"
+      },
+      {
+        title: "Expense Reporting : ",
+        description: "Easily log expenses with receipt upload and integrated sign-off workflow.",
+        icon: "file-invoice-dollar"
+      },
+      {
+        title: "Invoicing : ",
+        description: "Generate and track invoices automatically based on time entries and billable expenses.",
+        icon: "file-invoice"
+      },
+      {
+        title: "Time Tracking : ",
+        description: "Track your working hours intuitively—via entries or stopwatch—for accurate billing.",
+        icon: "clock"
+      }
+    ],
+    status: "completed",
+    year: "2025"
+  },
 
   {
     id: "ingenitiv",
     title: "inGenitiv",
     detailedDescription: "Marketing website for Ingenitiv, a Swiss IT and digital transformation company, focusing on responsive design, SEO optimization, and modern performance standards.",
-    tags: ["Next js", "tailwind css","TS", "i18n"],
+    tags: ["Next js", "Tailwind css", "Typescript", "i18n", "Google Analytics", "SEO"],
     imageUrl: getImagePath(IMAGE_PATHS.HEROES.INGENITIV),
     projectUrl: "https://ingenitiv.com/en",
     features: [
       {
-        description: "Building key sections based on Figma designs",
+        description: "● Building key sections based on Figma designs",
         icon: "map-pin"
       },
       {
-        description: "Implementing responsive layouts for desktop and mobile",
+        description: "● Implementing responsive layouts for desktop and mobile",
         icon: "route"
       },
       {
-        description: "Ensuring SEO best practices ",
+        description: "● Ensuring SEO best practices ",
         icon: "trophy"
       },
       {
-        description: "Implementing internationalization (i18n) ",
+        description: "● Implementing internationalization (i18n) ",
         icon: "trophy"
       }
     ],
-    status: "in-progress",
+    status: "completed",
+    year: "2025"
+  },
+  {
+    id: "cogify",
+    title: "Cogify Website",
+    detailedDescription: "Corporate site for Cogify AG, a Swiss people‑first software development and digital transformation partner. Highlights include custom software development, UX/UI design, cybersecurity, and products like Organitz and iCards, all delivered with Swiss quality, agility, and excellence.",
+    tags: ["Next js", "Strapi", "Typescript", "i18n", "Google Analytics", "SEO"],
+    imageUrl: getImagePath(IMAGE_PATHS.HEROES.COGIFY),
+    projectUrl: "https://cogify.io/en",
+    features: [
+      {
+        description: "● Maintaining and extending the existing Next.js website",
+        icon: "wrench"
+      },
+      {
+        description: "● Building new pages from Figma designs",
+        icon: "map-pin"
+      },
+      {
+        description: "● Implementing responsive layouts for desktop and mobile",
+        icon: "route"
+      },
+      {
+        description: "● Integrating SEO best practices and semantic HTML",
+        icon: "trophy"
+      },
+      {
+        description: "● Implementing internationalization (i18n) with English, German, and French support",
+        icon: "globe"
+      },
+      {
+        description: "● Integrating Google Analytics, Google Search Console, and Google Tag Manager",
+        icon: "bar-chart-4"
+      }
+    ]
+    ,
+    status: "completed",
     year: "2025"
   }
 ];
